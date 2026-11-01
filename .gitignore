@@ -1,0 +1,7 @@
+# Build artefacts: rebuilt from book/ + receipts/ by anyone who clones this repo.
+receipts/*_vectors.csv
+spine/*.parquet
+rebuild/
+*.lance/
+preview/
+preview400/
