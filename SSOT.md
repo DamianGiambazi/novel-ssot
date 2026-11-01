@@ -34,6 +34,7 @@ the terror of living without one. Every chapter must serve this spine.
   but do not resolve it.
 - Chapter 7 is the most important chapter in the novel. It is where the
   protagonist's old self dies. Everything after is aftermath.
+- Chapter 2 must establish the routine as a defence mechanism. The precision is not calm. It is armour.
 
 ## Leviathan Lock
 The AI is FORBIDDEN from:
