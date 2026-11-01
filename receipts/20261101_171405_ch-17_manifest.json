@@ -1,0 +1,156 @@
+{
+  "schema_version": "2.0",
+  "tool": "vector-snake",
+  "version": "2.0.0",
+  "created_utc": "2026-11-01T16:16:19+00:00",
+  "source": {
+    "file": "ch-17.md",
+    "path": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-17.md",
+    "bytes": 100,
+    "sha256": "94e40ba1d72d77157f1512f92f511cb73ef7e00af86b3780b0d6b7b0af541fcd"
+  },
+  "extraction": {
+    "format": "markdown",
+    "extractor": "markdown/light-cleanup",
+    "encoding": "utf-8",
+    "metadata": {
+      "bytes": 100,
+      "sha256": "94e40ba1d72d77157f1512f92f511cb73ef7e00af86b3780b0d6b7b0af541fcd"
+    },
+    "warnings": []
+  },
+  "normalization": {
+    "original_chars": 100,
+    "normalized_chars": 100,
+    "normalized_sha256": "94e40ba1d72d77157f1512f92f511cb73ef7e00af86b3780b0d6b7b0af541fcd",
+    "operations": {},
+    "wrap_joins": []
+  },
+  "chunking": {
+    "strategy": "recursive-paragraph-line-sentence-word-guarded-character",
+    "max_chars": 800,
+    "overlap": 120,
+    "min_chunk_chars": 40,
+    "chunk_count": 1,
+    "base_coverage_chars": 100,
+    "auto_fit_adjustments": []
+  },
+  "embedding": {
+    "model": "all-MiniLM-L6-v2",
+    "device": "cpu",
+    "vector_dim": 384,
+    "normalize_embeddings": true,
+    "batch_size": 16,
+    "offline": true,
+    "token_telemetry": {
+      "available": true,
+      "max_seq_length": 256,
+      "min_tokens": 26,
+      "mean_tokens": 26.0,
+      "max_tokens": 26,
+      "over_budget_count": 0
+    }
+  },
+  "output": {
+    "csv": "20261101_171405_ch-17_vectors.csv",
+    "csv_sha256": "79220eeb7101c4af97105091629043e264074c9aeecadbadf8ad9f30ab08d32f",
+    "rows": 1,
+    "columns": [
+      "id",
+      "source_file",
+      "chunk_index",
+      "created_utc",
+      "embedding_model",
+      "vector_dim",
+      "text",
+      "vector_json"
+    ]
+  },
+  "audit": {
+    "status": "pass",
+    "checks": [
+      {
+        "name": "coverage_exact",
+        "passed": true,
+        "detail": "100/100 normalized characters covered by base spans."
+      },
+      {
+        "name": "spans_contiguous",
+        "passed": true,
+        "detail": "Base spans must not gap or overlap."
+      },
+      {
+        "name": "no_empty_chunks",
+        "passed": true,
+        "detail": "Every emitted chunk must contain text."
+      },
+      {
+        "name": "chunk_indices_unique",
+        "passed": true,
+        "detail": "Chunk indices must be unique and ordered."
+      },
+      {
+        "name": "chunk_indices_ordered",
+        "passed": true,
+        "detail": "Chunk indices must be 0..N-1."
+      },
+      {
+        "name": "no_midword_base_ends",
+        "passed": true,
+        "detail": "All base ends are safe."
+      },
+      {
+        "name": "no_midword_prefix_starts",
+        "passed": true,
+        "detail": "All prefixes are boundary-aligned."
+      },
+      {
+        "name": "min_chunk_size",
+        "passed": true,
+        "detail": "All chunks meet minimum size."
+      },
+      {
+        "name": "max_chunk_size",
+        "passed": true,
+        "detail": "All chunks within budget."
+      },
+      {
+        "name": "vector_count_matches",
+        "passed": true,
+        "detail": "1 vectors for 1 chunks."
+      },
+      {
+        "name": "vector_dim_consistent",
+        "passed": true,
+        "detail": "Observed dimensions: [384]"
+      },
+      {
+        "name": "vector_values_finite",
+        "passed": true,
+        "detail": "No NaN or Infinity values."
+      },
+      {
+        "name": "expected_dim_matches",
+        "passed": true,
+        "detail": "Expected 384, observed 384."
+      },
+      {
+        "name": "csv_roundtrip",
+        "passed": true,
+        "detail": "1 rows re-read and validated."
+      }
+    ],
+    "warnings": []
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "chars": 99,
+      "base_start": 0,
+      "base_end": 100,
+      "prefix_start": null,
+      "prefix_end": null,
+      "text_sha256": "a81be16b1c981c67ec3f4ff5090ac4f501fbbcb874d0e29fcae3e91cbfab3e8a"
+    }
+  ]
+}

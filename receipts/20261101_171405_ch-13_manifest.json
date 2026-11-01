@@ -1,0 +1,156 @@
+{
+  "schema_version": "2.0",
+  "tool": "vector-snake",
+  "version": "2.0.0",
+  "created_utc": "2026-11-01T16:16:17+00:00",
+  "source": {
+    "file": "ch-13.md",
+    "path": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-13.md",
+    "bytes": 539,
+    "sha256": "5677537a82a8cd2f48b78c3a12b04f4b9a7ec680c28e0193f89930b581844cac"
+  },
+  "extraction": {
+    "format": "markdown",
+    "extractor": "markdown/light-cleanup",
+    "encoding": "utf-8",
+    "metadata": {
+      "bytes": 539,
+      "sha256": "5677537a82a8cd2f48b78c3a12b04f4b9a7ec680c28e0193f89930b581844cac"
+    },
+    "warnings": []
+  },
+  "normalization": {
+    "original_chars": 539,
+    "normalized_chars": 539,
+    "normalized_sha256": "5677537a82a8cd2f48b78c3a12b04f4b9a7ec680c28e0193f89930b581844cac",
+    "operations": {},
+    "wrap_joins": []
+  },
+  "chunking": {
+    "strategy": "recursive-paragraph-line-sentence-word-guarded-character",
+    "max_chars": 800,
+    "overlap": 120,
+    "min_chunk_chars": 40,
+    "chunk_count": 1,
+    "base_coverage_chars": 539,
+    "auto_fit_adjustments": []
+  },
+  "embedding": {
+    "model": "all-MiniLM-L6-v2",
+    "device": "cpu",
+    "vector_dim": 384,
+    "normalize_embeddings": true,
+    "batch_size": 16,
+    "offline": true,
+    "token_telemetry": {
+      "available": true,
+      "max_seq_length": 256,
+      "min_tokens": 125,
+      "mean_tokens": 125.0,
+      "max_tokens": 125,
+      "over_budget_count": 0
+    }
+  },
+  "output": {
+    "csv": "20261101_171405_ch-13_vectors.csv",
+    "csv_sha256": "171cc8caafacb26740ed3158a913898ee9a4162e2933d5d6c8d955d65d685ab9",
+    "rows": 1,
+    "columns": [
+      "id",
+      "source_file",
+      "chunk_index",
+      "created_utc",
+      "embedding_model",
+      "vector_dim",
+      "text",
+      "vector_json"
+    ]
+  },
+  "audit": {
+    "status": "pass",
+    "checks": [
+      {
+        "name": "coverage_exact",
+        "passed": true,
+        "detail": "539/539 normalized characters covered by base spans."
+      },
+      {
+        "name": "spans_contiguous",
+        "passed": true,
+        "detail": "Base spans must not gap or overlap."
+      },
+      {
+        "name": "no_empty_chunks",
+        "passed": true,
+        "detail": "Every emitted chunk must contain text."
+      },
+      {
+        "name": "chunk_indices_unique",
+        "passed": true,
+        "detail": "Chunk indices must be unique and ordered."
+      },
+      {
+        "name": "chunk_indices_ordered",
+        "passed": true,
+        "detail": "Chunk indices must be 0..N-1."
+      },
+      {
+        "name": "no_midword_base_ends",
+        "passed": true,
+        "detail": "All base ends are safe."
+      },
+      {
+        "name": "no_midword_prefix_starts",
+        "passed": true,
+        "detail": "All prefixes are boundary-aligned."
+      },
+      {
+        "name": "min_chunk_size",
+        "passed": true,
+        "detail": "All chunks meet minimum size."
+      },
+      {
+        "name": "max_chunk_size",
+        "passed": true,
+        "detail": "All chunks within budget."
+      },
+      {
+        "name": "vector_count_matches",
+        "passed": true,
+        "detail": "1 vectors for 1 chunks."
+      },
+      {
+        "name": "vector_dim_consistent",
+        "passed": true,
+        "detail": "Observed dimensions: [384]"
+      },
+      {
+        "name": "vector_values_finite",
+        "passed": true,
+        "detail": "No NaN or Infinity values."
+      },
+      {
+        "name": "expected_dim_matches",
+        "passed": true,
+        "detail": "Expected 384, observed 384."
+      },
+      {
+        "name": "csv_roundtrip",
+        "passed": true,
+        "detail": "1 rows re-read and validated."
+      }
+    ],
+    "warnings": []
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "chars": 538,
+      "base_start": 0,
+      "base_end": 539,
+      "prefix_start": null,
+      "prefix_end": null,
+      "text_sha256": "2bf35e49784022cd36368fc1e7c5fe6dbf635a86addf0ef7ca20973c4776b116"
+    }
+  ]
+}

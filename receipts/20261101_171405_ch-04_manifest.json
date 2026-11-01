@@ -1,0 +1,165 @@
+{
+  "schema_version": "2.0",
+  "tool": "vector-snake",
+  "version": "2.0.0",
+  "created_utc": "2026-11-01T16:16:13+00:00",
+  "source": {
+    "file": "ch-04.md",
+    "path": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-04.md",
+    "bytes": 1330,
+    "sha256": "4d62b4a83ba858f0180bc0664ed8f5194dd569d32fc65ab5dc3946d6795f3a0d"
+  },
+  "extraction": {
+    "format": "markdown",
+    "extractor": "markdown/light-cleanup",
+    "encoding": "utf-8",
+    "metadata": {
+      "bytes": 1330,
+      "sha256": "4d62b4a83ba858f0180bc0664ed8f5194dd569d32fc65ab5dc3946d6795f3a0d"
+    },
+    "warnings": []
+  },
+  "normalization": {
+    "original_chars": 1328,
+    "normalized_chars": 1328,
+    "normalized_sha256": "4d62b4a83ba858f0180bc0664ed8f5194dd569d32fc65ab5dc3946d6795f3a0d",
+    "operations": {},
+    "wrap_joins": []
+  },
+  "chunking": {
+    "strategy": "recursive-paragraph-line-sentence-word-guarded-character",
+    "max_chars": 800,
+    "overlap": 120,
+    "min_chunk_chars": 40,
+    "chunk_count": 2,
+    "base_coverage_chars": 1328,
+    "auto_fit_adjustments": []
+  },
+  "embedding": {
+    "model": "all-MiniLM-L6-v2",
+    "device": "cpu",
+    "vector_dim": 384,
+    "normalize_embeddings": true,
+    "batch_size": 16,
+    "offline": true,
+    "token_telemetry": {
+      "available": true,
+      "max_seq_length": 256,
+      "min_tokens": 130,
+      "mean_tokens": 160.5,
+      "max_tokens": 191,
+      "over_budget_count": 0
+    }
+  },
+  "output": {
+    "csv": "20261101_171405_ch-04_vectors.csv",
+    "csv_sha256": "5f5895cb02f4ec8e2da2fa8781390babd7df6c0358d54d25b1c43a27f12099b6",
+    "rows": 2,
+    "columns": [
+      "id",
+      "source_file",
+      "chunk_index",
+      "created_utc",
+      "embedding_model",
+      "vector_dim",
+      "text",
+      "vector_json"
+    ]
+  },
+  "audit": {
+    "status": "pass",
+    "checks": [
+      {
+        "name": "coverage_exact",
+        "passed": true,
+        "detail": "1328/1328 normalized characters covered by base spans."
+      },
+      {
+        "name": "spans_contiguous",
+        "passed": true,
+        "detail": "Base spans must not gap or overlap."
+      },
+      {
+        "name": "no_empty_chunks",
+        "passed": true,
+        "detail": "Every emitted chunk must contain text."
+      },
+      {
+        "name": "chunk_indices_unique",
+        "passed": true,
+        "detail": "Chunk indices must be unique and ordered."
+      },
+      {
+        "name": "chunk_indices_ordered",
+        "passed": true,
+        "detail": "Chunk indices must be 0..N-1."
+      },
+      {
+        "name": "no_midword_base_ends",
+        "passed": true,
+        "detail": "All base ends are safe."
+      },
+      {
+        "name": "no_midword_prefix_starts",
+        "passed": true,
+        "detail": "All prefixes are boundary-aligned."
+      },
+      {
+        "name": "min_chunk_size",
+        "passed": true,
+        "detail": "All chunks meet minimum size."
+      },
+      {
+        "name": "max_chunk_size",
+        "passed": true,
+        "detail": "All chunks within budget."
+      },
+      {
+        "name": "vector_count_matches",
+        "passed": true,
+        "detail": "2 vectors for 2 chunks."
+      },
+      {
+        "name": "vector_dim_consistent",
+        "passed": true,
+        "detail": "Observed dimensions: [384]"
+      },
+      {
+        "name": "vector_values_finite",
+        "passed": true,
+        "detail": "No NaN or Infinity values."
+      },
+      {
+        "name": "expected_dim_matches",
+        "passed": true,
+        "detail": "Expected 384, observed 384."
+      },
+      {
+        "name": "csv_roundtrip",
+        "passed": true,
+        "detail": "2 rows re-read and validated."
+      }
+    ],
+    "warnings": []
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "chars": 792,
+      "base_start": 0,
+      "base_end": 794,
+      "prefix_start": null,
+      "prefix_end": null,
+      "text_sha256": "9386fd8dcd3958a8344b1dbe4d9c433408aa8117efce42e7f036544d6b1c031b"
+    },
+    {
+      "index": 1,
+      "chars": 568,
+      "base_start": 794,
+      "base_end": 1328,
+      "prefix_start": 760,
+      "prefix_end": 794,
+      "text_sha256": "50164996d7eb1b434d7f77b252b4903f51e4309fa025b5712040192e8f43096f"
+    }
+  ]
+}

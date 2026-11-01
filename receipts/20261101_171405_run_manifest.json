@@ -1,0 +1,2385 @@
+{
+  "schema_version": "2.0",
+  "tool": "vector-snake",
+  "version": "2.0.0",
+  "run_id": "20261101_171405",
+  "started_utc": "2026-11-01T16:14:05+00:00",
+  "finished_utc": "2026-11-01T16:16:22+00:00",
+  "dry_run": false,
+  "config": {
+    "model": "all-MiniLM-L6-v2",
+    "device": "cpu",
+    "max_chars": 800,
+    "overlap": 120,
+    "min_chunk_chars": 40,
+    "batch_size": 16,
+    "offline": true,
+    "join_hard_wraps": false,
+    "auto_fit": false,
+    "strict": false,
+    "lancedb": "",
+    "table": "kb_main",
+    "lancedb_mode": "replace-source"
+  },
+  "summary": {
+    "inputs": 28,
+    "passed": 28,
+    "warned": 0,
+    "failed": 0,
+    "skipped_empty": 0
+  },
+  "documents": [
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-01.md",
+      "source_file": "ch-01.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-01_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-01_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "626/626 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-02.md",
+      "source_file": "ch-02.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-02_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-02_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "626/626 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-03.md",
+      "source_file": "ch-03.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-03_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-03_manifest.json"
+      },
+      "chunk_count": 2,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "931/931 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "2 vectors for 2 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "2 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-04.md",
+      "source_file": "ch-04.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-04_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-04_manifest.json"
+      },
+      "chunk_count": 2,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "1328/1328 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "2 vectors for 2 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "2 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-05.md",
+      "source_file": "ch-05.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-05_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-05_manifest.json"
+      },
+      "chunk_count": 2,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "954/954 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "2 vectors for 2 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "2 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-06.md",
+      "source_file": "ch-06.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-06_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-06_manifest.json"
+      },
+      "chunk_count": 2,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "1072/1072 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "2 vectors for 2 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "2 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-07.md",
+      "source_file": "ch-07.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-07_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-07_manifest.json"
+      },
+      "chunk_count": 2,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "1085/1085 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "2 vectors for 2 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "2 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-08.md",
+      "source_file": "ch-08.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-08_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-08_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "127/127 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-09.md",
+      "source_file": "ch-09.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-09_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-09_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "177/177 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-10.md",
+      "source_file": "ch-10.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-10_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-10_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "125/125 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-11.md",
+      "source_file": "ch-11.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-11_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-11_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "128/128 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-12.md",
+      "source_file": "ch-12.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-12_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-12_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "113/113 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-13.md",
+      "source_file": "ch-13.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-13_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-13_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "539/539 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-14.md",
+      "source_file": "ch-14.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-14_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-14_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "110/110 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-15.md",
+      "source_file": "ch-15.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-15_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-15_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "124/124 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-16.md",
+      "source_file": "ch-16.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-16_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-16_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "128/128 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-17.md",
+      "source_file": "ch-17.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-17_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-17_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "100/100 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-18.md",
+      "source_file": "ch-18.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-18_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-18_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "175/175 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-19.md",
+      "source_file": "ch-19.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-19_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-19_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "725/725 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-20.md",
+      "source_file": "ch-20.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-20_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-20_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "151/151 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-21.md",
+      "source_file": "ch-21.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-21_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-21_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "75/75 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-22.md",
+      "source_file": "ch-22.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-22_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-22_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "74/74 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-23.md",
+      "source_file": "ch-23.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-23_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-23_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "91/91 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\corpus\\ch-24.md",
+      "source_file": "ch-24.md",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-24_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_ch-24_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "560/560 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\questions\\q1.txt",
+      "source_file": "q1.txt",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_q1_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_q1_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "92/92 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\questions\\q2.txt",
+      "source_file": "q2.txt",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_q2_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_q2_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "107/107 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\questions\\q3.txt",
+      "source_file": "q3.txt",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_q3_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_q3_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "82/82 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "source": "C:\\Dev\\novel-ssot\\book\\questions\\q4.txt",
+      "source_file": "q4.txt",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_q4_vectors.csv",
+        "manifest": "C:\\Dev\\novel-ssot\\receipts\\20261101_171405_q4_manifest.json"
+      },
+      "chunk_count": 1,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "78/78 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "1 vectors for 1 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "1 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}
