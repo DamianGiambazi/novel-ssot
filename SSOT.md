@@ -22,6 +22,7 @@ Out of Scope: Plot twists for surprise. Magic realism. "Fixing" Chapter 1.
 - The protagonist is always slightly cold. Wears an extra layer.
 - Sarah's key line is spoken in Chapter 5.
 - The letter is locked in the middle dresser drawer from Ch 4 to Ch 13.
+- The middle dresser drawer: track its state (locked or not, what's inside) chapter by chapter. Ch13 leaves it unlocked; nothing later may lock it again without a reason on the page. (From #1.)
 
 ## Emotional Spine
 The novel is about the cost of maintaining a comfortable lie versus
