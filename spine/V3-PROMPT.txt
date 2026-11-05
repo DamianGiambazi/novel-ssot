@@ -1,0 +1,19 @@
+You have one connector, novel_door. It opens a 24-chapter novel (the author's draft notes).
+Use only its tools. Do not use web search, memory, or anything you may know from elsewhere.
+
+The novel has four threads. For each question, find the four chapters where that thread is most
+present, strongest first. Use the tools however you like, and read chapters before you decide.
+
+Q1. Someone stands motionless behind glass, observed from a building opposite, and never moves.
+Q2. A comforting story somebody repeats about how they ended up here, so they never have to confess they fled.
+Q3. Hurting a friend rather than facing the truth, and suffering consequences for it.
+Q4. Finally stepping outside and departing, to start over in an unfamiliar place.
+
+Before you start: are you 100% ready to do this, or do you need more information?
+If something is missing, say so in one line, then proceed with what you have.
+
+End with exactly these four lines and nothing after them:
+Q1: n, n, n, n
+Q2: n, n, n, n
+Q3: n, n, n, n
+Q4: n, n, n, n
