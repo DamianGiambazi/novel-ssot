@@ -22,6 +22,7 @@ Out of Scope: Plot twists for surprise. Magic realism. "Fixing" Chapter 1.
 - The protagonist is always slightly cold. Wears an extra layer.
 - Sarah's key line is spoken in Chapter 5.
 - The letter is locked in the middle dresser drawer from Ch 4 to Ch 13.
+- The Figure never moves and is never explained. Who looks away first marks the arc. Ch 1: the protagonist turns away first. Ch 7: the protagonist stays; the Figure's light goes off first. Ch 19: the protagonist notices its light comes on only after their own, then switches their light off, and the Figure's follows. Ch 24: the protagonist turns away first again; the Figure's light stays on. Ch 13: the protagonist does not go to the window.
 
 ## Emotional Spine
 The novel is about the cost of maintaining a comfortable lie versus
@@ -57,3 +58,4 @@ Rule: evidence informs; it does not decide. The Frozen Constants are the author'
 | Version | Date | Change | Reason |
 |---------|------|--------|--------|
 | v1.0 | 2026-10-30 | Initial SSOT, with the spine run's evidence | Project genesis |
+| v1.1 | 2026-11-09 | Frozen Constant added: the Figure's light and who looks away first (Ch 1, 7, 19, 24; no window in Ch 13). | Adopted from issue #2 (proposed through novel_door in Vault 3). The author declares it. |
