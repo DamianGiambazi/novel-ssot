@@ -5,6 +5,8 @@ A 24-chapter literary novel about the cost of maintaining a comfortable
 lie versus the terror of living without one.
 Out of Scope: Plot twists for surprise. Magic realism. "Fixing" Chapter 1.
 
+ch-04: rescued beats, fixed from my own notes (Albion clock, joke, Tuesday only)
+
 ## Locked Decisions
 | # | Decision | Rationale | Lock |
 |---|----------|-----------|------|
