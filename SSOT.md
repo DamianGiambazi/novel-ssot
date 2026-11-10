@@ -59,3 +59,4 @@ Rule: evidence informs; it does not decide. The Frozen Constants are the author'
 |---------|------|--------|--------|
 | v1.0 | 2026-10-30 | Initial SSOT, with the spine run's evidence | Project genesis |
 | v1.1 | 2026-11-09 | Frozen Constant added: the Figure's light and who looks away first (Ch 1, 7, 19, 24; no window in Ch 13). | Adopted from issue #2 (proposed through novel_door in Vault 3). The author declares it. |
+| v1.2 | 2026-11-10 | Chapter 4 beats rescued: drafts/ch-04-beats.csv (Tuesday only; the joke that lands wrong, the lock on top of Sarah's tea, the Albion clock). No rule changed. | Five contracts, checked against the sealed key; the fixes made by the author from the ch-04 notes. |
